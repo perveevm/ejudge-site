@@ -1,16 +1,13 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="./ejudge/unpriv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/unpriv3.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/priv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/ejudge3_ss.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Открытые олимпиады Липецкой области. 2020-2021</title>
 
-    <script type="text/javascript" charset="UTF-8" src="./ejudge/priv.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
 
     <script src="./ejudge/jquery.min.js"></script>
     <script>
@@ -19,98 +16,135 @@
             $("#footerCopyright").load("footer.html");
         });
     </script>
+
+    <style>
+        .dropdown-menu .dropdown-menu {
+            top: auto;
+            left: 100%;
+            transform: translateY(-2rem);
+        }
+        .dropdown-item + .dropdown-menu {
+            display: none;
+        }
+        .dropdown-item.submenu::after {
+            content: '▸';
+            margin-left: 0.5rem;
+        }
+        .dropdown-item:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .body-back {
+            background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+            background-repeat: repeat;
+        }
+    </style>
 </head>
-<body>
-<div id="main-cont">
-    <div id="container">
-        <div id="header">
-            <div id="logo"><img src="./ejudge/logo3.png" alt="logo"/></div>
-            <h1>Открытые олимпиады Липецкой области. 2020-2021</h1>
-        </div>
 
-        <div id="menuContestSelector"></div>
+<body class="body-back">
 
-        <h4>Олимпиада Уникум</h4>
-        <table class="table-gray">
-            <tr>
-                <th>Дата</th>
-                <th>Соревнование</th>
-                <th>Вход</th>
-                <th>Результаты</th>
-            </tr>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
 
-            <tr>
-                <td>12.04.2021 – 18.04.2021</td>
-                <td>Уникум 2021. Отборочный тур. 3 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=140">Вход</a></td>
-                <td>–</td>
-            </tr>
+<div class="container" style="background-color: white;">
+    <div id="menuContestSelector"></div>
 
-            <tr>
-                <td>12.04.2021 – 18.04.2021</td>
-                <td>Уникум 2021. Отборочный тур. 4 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=141">Вход</a></td>
-                <td>–</td>
-            </tr>
-
-            <tr>
-                <td>12.04.2021 – 18.04.2021</td>
-                <td>Уникум 2021. Отборочный тур. 5 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=142">Вход</a></td>
-                <td>–</td>
-            </tr>
-
-            <tr>
-                <td>12.04.2021 – 18.04.2021</td>
-                <td>Уникум 2021. Отборочный тур. 6 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=143">Вход</a></td>
-                <td>–</td>
-            </tr>
-
-        </table>
-
-        <h4>Олимпиада Грамотей</h4>
-        <table class="table-gray">
-            <tr>
-                <th>Дата</th>
-                <th>Соревнование</th>
-                <th>Вход</th>
-                <th>Результаты</th>
-            </tr>
-
-            <tr>
-                <td>05.04.2021 – 11.04.2021</td>
-                <td>Грамотей 2021. Отборочный тур. 3 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=136">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-3-qual">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>05.04.2021 – 11.04.2021</td>
-                <td>Грамотей 2021. Отборочный тур. 4 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=137">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-4-qual">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>05.04.2021 – 11.04.2021</td>
-                <td>Грамотей 2021. Отборочный тур. 5 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=138">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-5-qual">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>05.04.2021 – 11.04.2021</td>
-                <td>Грамотей 2021. Отборочный тур. 6 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=139">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-6-qual">Результаты</a></td>
-            </tr>
-
-        </table>
-
-        <div id="footerCopyright"></div>
+    <div class="col-md-12 text-center">
+        <h3>Открытые олимпиады Липецкой области. 2020-2021</h3>
     </div>
+
+    <h4>Олимпиада Уникум</h4>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Соревнование</th>
+            <th>Вход</th>
+            <th>Результаты</th>
+        </tr>
+
+        <tr>
+            <td>12.04.2021 – 18.04.2021</td>
+            <td>Уникум 2021. Отборочный тур. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=140">Вход</a></td>
+            <td>–</td>
+        </tr>
+
+        <tr>
+            <td>12.04.2021 – 18.04.2021</td>
+            <td>Уникум 2021. Отборочный тур. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=141">Вход</a></td>
+            <td>–</td>
+        </tr>
+
+        <tr>
+            <td>12.04.2021 – 18.04.2021</td>
+            <td>Уникум 2021. Отборочный тур. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=142">Вход</a></td>
+            <td>–</td>
+        </tr>
+
+        <tr>
+            <td>12.04.2021 – 18.04.2021</td>
+            <td>Уникум 2021. Отборочный тур. 6 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=143">Вход</a></td>
+            <td>–</td>
+        </tr>
+
+    </table>
+
+    <h4>Олимпиада Грамотей</h4>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Соревнование</th>
+            <th>Вход</th>
+            <th>Результаты</th>
+        </tr>
+
+        <tr>
+            <td>05.04.2021 – 11.04.2021</td>
+            <td>Грамотей 2021. Отборочный тур. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=136">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-3-qual">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>05.04.2021 – 11.04.2021</td>
+            <td>Грамотей 2021. Отборочный тур. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=137">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-4-qual">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>05.04.2021 – 11.04.2021</td>
+            <td>Грамотей 2021. Отборочный тур. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=138">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-5-qual">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>05.04.2021 – 11.04.2021</td>
+            <td>Грамотей 2021. Отборочный тур. 6 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=139">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/gramotey-2021-6-qual">Результаты</a></td>
+        </tr>
+
+    </table>
+
+    <div id="footerCopyright"></div>
 </div>
+
+<script>
+    $('.dropdown-toggle').click(function(e) {
+        if ($(document).width() > 768) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            if (url !== '#') {
+                window.location.href = url;
+            }
+        }
+    });
+</script>
 </body>
 </html>
-

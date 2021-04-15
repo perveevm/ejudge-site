@@ -1,16 +1,13 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="./ejudge/unpriv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/unpriv3.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/priv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/ejudge3_ss.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Открытые олимпиады Липецкой области</title>
 
-    <script type="text/javascript" charset="UTF-8" src="./ejudge/priv.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
 
     <script src="./ejudge/jquery.min.js"></script>
     <script>
@@ -19,218 +16,257 @@
             $("#footerCopyright").load("footer.html");
         });
     </script>
+
+    <style>
+        .dropdown-menu .dropdown-menu {
+            top: auto;
+            left: 100%;
+            transform: translateY(-2rem);
+        }
+        .dropdown-item + .dropdown-menu {
+            display: none;
+        }
+        .dropdown-item.submenu::after {
+            content: '▸';
+            margin-left: 0.5rem;
+        }
+        .dropdown-item:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .body-back {
+            background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+            background-repeat: repeat;
+        }
+    </style>
 </head>
-<body>
-<div id="main-cont">
-    <div id="container">
-        <div id="header">
-            <div id="logo"><img src="./ejudge/logo3.png" alt="logo"/></div>
-            <h1>Открытые олимпиады Липецкой области</h1>
-        </div>
 
-        <div id="menuContestSelector"></div>
-                <h4>Олимпиада Уникум</h4>
-                <table class="table-gray">
-                    <tr>
-                        <th>Дата</th>
-                        <th>Соревнование</th>
-                        <th>Вход</th>
-                        <th>Результаты</th>
-                    </tr>
+<body class="body-back">
 
-                    <tr>
-                        <td>06.05.2020</td>
-                        <td>Уникум 2020. Отбор. 3 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=59">Вход</a></td>
-                        <td><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-3-qual">Результаты</a></td>
-                    </tr>
-                    <tr>
-                        <td>06.05.2020</td>
-                        <td>Уникум 2020. Отбор. 4 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=60">Вход</a></td>
-                        <td><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-4-qual">Результаты</a></td>
-                    </tr>
-                    <tr>
-                        <td>06.05.2020</td>
-                        <td>Уникум 2020. Отбор. 5 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=61">Вход</a></td>
-                        <td><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-5-qual">Результаты</a></td>
-                    </tr>
-                    <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;">06.05.2020</td>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;">Уникум 2020. Отбор. 6 класс</td>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=62">Вход</a></td>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-6-qual">Результаты</a></td>
-                    </tr>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
 
-                    <tr>
-                        <td>16.05.2020</td>
-                        <td>Уникум 2020. Финал. 3 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=65">Вход</a></td>
-                        <td><div align="center">–</div></td>
-                    </tr>
-                    <tr>
-                        <td>16.05.2020</td>
-                        <td>Уникум 2020. Финал. 4 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=66">Вход</a></td>
-                        <td><div align="center">–</div></td>
-                    </tr>
-                    <tr>
-                        <td>16.05.2020</td>
-                        <td>Уникум 2020. Финал. 5 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=67">Вход</a></td>
-                        <td><div align="center">–</div></td>
-                    </tr>
-                    <tr>
-                        <td>16.05.2020</td>
-                        <td>Уникум 2020. Финал. 6 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=68">Вход</a></td>
-                        <td><div align="center">–</div></td>
-                    </tr>
-                </table>
+<div class="container" style="background-color: white;">
+    <div id="menuContestSelector"></div>
 
-                <h4>Липецкая командная олимпиада школьников по программированию – 2020</h4>
-
-                <h3><a href="http://ejudge.strategy48.ru/lscpc-tutorial.pdf">Разбор</a> задач 8-11 класса</h3>
-
-                <table class="table-gray">
-                    <tr>
-                        <th>Дата</th>
-                        <th>Соревнование</th>
-                        <th>Вход</th>
-                        <th>Результаты</th>
-                    </tr>
-
-                    <tr>
-                        <td>21.04.2020 – 28.04.2020</td>
-                        <td>ЛКОШП. Отбор. 3-7 классы</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=47">Вход</a></td>
-                        <td><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-3-7-qual">Результаты</a></td>
-                    </tr>
-
-                    <tr>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;">21.04.2020 – 28.04.2020</td>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;">ЛКОШП. Отбор. 8-11 классы</td>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=48">Вход</a></td>
-                        <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-8-11-qual">Результаты</a></td>
-                    </tr>
-
-                    <tr>
-                        <td>16.05.2020</td>
-                        <td>ЛКОШП. Финал. 3-7 классы</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=70">Вход</a></td>
-                        <td><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-3-7-finals">Результаты</a></td>
-                    </tr>
-                    <tr>
-                        <td>16.05.2020</td>
-                        <td>ЛКОШП. Финал. 8-11 классы</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=69">Вход</a></td>
-                        <td><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-8-11-finals">Результаты</a></td>
-                    </tr>
-                </table>
-
-                <h4>Олимпиада Грамотей</h4>
-                <table class="table-gray">
-                    <tr>
-                        <th>Дата</th>
-                        <th>Соревнование</th>
-                        <th>Вход</th>
-                    </tr>
-
-                    <tr>
-                        <td>29.04.2020</td>
-                        <td>Грамотей 2020. 3 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=49">Вход</a></td>
-                    </tr>
-                    <tr>
-                        <td>29.04.2020</td>
-                        <td>Грамотей 2020. 4 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=50">Вход</a></td>
-                    </tr>
-                    <tr>
-                        <td>29.04.2020</td>
-                        <td>Грамотей 2020. 5 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=51">Вход</a></td>
-                    </tr>
-                    <tr>
-                        <td>29.04.2020</td>
-                        <td>Грамотей 2020. 6 класс</td>
-                        <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=52">Вход</a></td>
-                    </tr>
-                </table>
-
-        <h4>Олимпиада СуперБит</h4>
-
-        <table class="table-gray">
-            <tr>
-                <th>Дата</th>
-                <th>Соревнование</th>
-                <th>Вход</th>
-                <th>Результаты</th>
-            </tr>
-
-            <tr>
-                <td>15.04.2020 – 18.04.2020</td>
-                <td>СуперБит 2020. Отбор. 3 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=41">Вход</a></td>
-                <td><a href="superbit-2020-3-qual-standings.html">Результаты</a></td>
-            </tr>
-
-
-            <tr>
-                <td>15.04.2020 – 18.04.2020</td>
-                <td>СуперБит 2020. Отбор. 4 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=43">Вход</a></td>
-                <td><a href="superbit-2020-4-qual-standings.html">Результаты</a></td>
-            </tr>
-
-
-            <tr>
-                <td>15.04.2020 – 18.04.2020</td>
-                <td>СуперБит 2020. Отбор. 5 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=45">Вход</a></td>
-                <td><a href="superbit-2020-5-qual-standings.html">Результаты</a></td>
-            </tr>
-
-
-            <tr>
-                <td style="border-bottom-style: solid; border-bottom-width: 5px;">15.04.2020 – 18.04.2020</td>
-                <td style="border-bottom-style: solid; border-bottom-width: 5px;">СуперБит 2020. Отбор. 6 класс</td>
-                <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=46">Вход</a></td>
-                <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="superbit-2020-6-qual-standings.html">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>25.04.2020</td>
-                <td>СуперБит. Финал. 3 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=54">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-3-finals">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>25.04.2020</td>
-                <td>СуперБит. Финал. 4 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=55">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-4-finals">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>25.04.2020</td>
-                <td>СуперБит. Финал. 5 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=56">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-5-finals">Результаты</a></td>
-            </tr>
-
-            <tr>
-                <td>25.04.2020</td>
-                <td>СуперБит. Финал. 6 класс</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=57">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-6-finals">Результаты</a></td>
-            </tr>
-        </table>
-        <div id="footerCopyright"></div>
+    <div class="col-md-12 text-center">
+        <h3>Открытые олимпиады Липецкой области</h3>
     </div>
+
+    <h4>Олимпиада Уникум</h4>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Соревнование</th>
+            <th>Вход</th>
+            <th>Результаты</th>
+        </tr>
+
+        <tr>
+            <td>06.05.2020</td>
+            <td>Уникум 2020. Отбор. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=59">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-3-qual">Результаты</a></td>
+        </tr>
+        <tr>
+            <td>06.05.2020</td>
+            <td>Уникум 2020. Отбор. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=60">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-4-qual">Результаты</a></td>
+        </tr>
+        <tr>
+            <td>06.05.2020</td>
+            <td>Уникум 2020. Отбор. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=61">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-5-qual">Результаты</a></td>
+        </tr>
+        <tr>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;">06.05.2020</td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;">Уникум 2020. Отбор. 6 класс</td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=62">Вход</a></td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/new-standings/unikum-2020-6-qual">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>16.05.2020</td>
+            <td>Уникум 2020. Финал. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=65">Вход</a></td>
+            <td><div align="center">–</div></td>
+        </tr>
+        <tr>
+            <td>16.05.2020</td>
+            <td>Уникум 2020. Финал. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=66">Вход</a></td>
+            <td><div align="center">–</div></td>
+        </tr>
+        <tr>
+            <td>16.05.2020</td>
+            <td>Уникум 2020. Финал. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=67">Вход</a></td>
+            <td><div align="center">–</div></td>
+        </tr>
+        <tr>
+            <td>16.05.2020</td>
+            <td>Уникум 2020. Финал. 6 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=68">Вход</a></td>
+            <td><div align="center">–</div></td>
+        </tr>
+    </table>
+
+    <h4>Липецкая командная олимпиада школьников по программированию – 2020</h4>
+
+    <h4><a href="http://ejudge.strategy48.ru/lscpc-tutorial.pdf">Разбор</a> задач 8-11 класса</h4>
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Соревнование</th>
+            <th>Вход</th>
+            <th>Результаты</th>
+        </tr>
+
+        <tr>
+            <td>21.04.2020 – 28.04.2020</td>
+            <td>ЛКОШП. Отбор. 3-7 классы</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=47">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-3-7-qual">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;">21.04.2020 – 28.04.2020</td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;">ЛКОШП. Отбор. 8-11 классы</td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=48">Вход</a></td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-8-11-qual">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>16.05.2020</td>
+            <td>ЛКОШП. Финал. 3-7 классы</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=70">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-3-7-finals">Результаты</a></td>
+        </tr>
+        <tr>
+            <td>16.05.2020</td>
+            <td>ЛКОШП. Финал. 8-11 классы</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=69">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/lscpc-2020-8-11-finals">Результаты</a></td>
+        </tr>
+    </table>
+
+    <h4>Олимпиада Грамотей</h4>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Соревнование</th>
+            <th>Вход</th>
+        </tr>
+
+        <tr>
+            <td>29.04.2020</td>
+            <td>Грамотей 2020. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=49">Вход</a></td>
+        </tr>
+        <tr>
+            <td>29.04.2020</td>
+            <td>Грамотей 2020. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=50">Вход</a></td>
+        </tr>
+        <tr>
+            <td>29.04.2020</td>
+            <td>Грамотей 2020. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=51">Вход</a></td>
+        </tr>
+        <tr>
+            <td>29.04.2020</td>
+            <td>Грамотей 2020. 6 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=52">Вход</a></td>
+        </tr>
+    </table>
+
+    <h4>Олимпиада СуперБит</h4>
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Соревнование</th>
+            <th>Вход</th>
+            <th>Результаты</th>
+        </tr>
+
+        <tr>
+            <td>15.04.2020 – 18.04.2020</td>
+            <td>СуперБит 2020. Отбор. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=41">Вход</a></td>
+            <td><a href="superbit-2020-3-qual-standings.html">Результаты</a></td>
+        </tr>
+
+
+        <tr>
+            <td>15.04.2020 – 18.04.2020</td>
+            <td>СуперБит 2020. Отбор. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=43">Вход</a></td>
+            <td><a href="superbit-2020-4-qual-standings.html">Результаты</a></td>
+        </tr>
+
+
+        <tr>
+            <td>15.04.2020 – 18.04.2020</td>
+            <td>СуперБит 2020. Отбор. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=45">Вход</a></td>
+            <td><a href="superbit-2020-5-qual-standings.html">Результаты</a></td>
+        </tr>
+
+
+        <tr>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;">15.04.2020 – 18.04.2020</td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;">СуперБит 2020. Отбор. 6 класс</td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=46">Вход</a></td>
+            <td style="border-bottom-style: solid; border-bottom-width: 5px;"><a href="superbit-2020-6-qual-standings.html">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>25.04.2020</td>
+            <td>СуперБит. Финал. 3 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=54">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-3-finals">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>25.04.2020</td>
+            <td>СуперБит. Финал. 4 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=55">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-4-finals">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>25.04.2020</td>
+            <td>СуперБит. Финал. 5 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=56">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-5-finals">Результаты</a></td>
+        </tr>
+
+        <tr>
+            <td>25.04.2020</td>
+            <td>СуперБит. Финал. 6 класс</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=57">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/new-standings/superbit-2020-6-finals">Результаты</a></td>
+        </tr>
+    </table>
+
+    <div id="footerCopyright"></div>
 </div>
+
+<script>
+    $('.dropdown-toggle').click(function(e) {
+        if ($(document).width() > 768) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            if (url !== '#') {
+                window.location.href = url;
+            }
+        }
+    });
+</script>
 </body>
 </html>
-

@@ -1,41 +1,78 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="http://ejudge.strategy48.ru/ejudge/unpriv.css" type="text/css"/>
-    <link rel="stylesheet" href="http://ejudge.strategy48.ru/ejudge/unpriv3.css" type="text/css"/>
-    <link rel="stylesheet" href="http://ejudge.strategy48.ru/ejudge/priv.css" type="text/css"/>
-    <link rel="stylesheet" href="http://ejudge.strategy48.ru/ejudge/ejudge3_ss.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>404: страница не найдена</title>
 
-    <script type="text/javascript" charset="UTF-8" src="http://ejudge.strategy48.ru/ejudge/priv.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
 
-    <script src="http://ejudge.strategy48.ru/ejudge/jquery.min.js"></script>
+    <script src="./ejudge/jquery.min.js"></script>
     <script>
         $(function () {
             $("#menuContestSelector").load("menu.html");
             $("#footerCopyright").load("footer.html");
         });
     </script>
+
+    <style>
+        .dropdown-menu .dropdown-menu {
+            top: auto;
+            left: 100%;
+            transform: translateY(-2rem);
+        }
+        .dropdown-item + .dropdown-menu {
+            display: none;
+        }
+        .dropdown-item.submenu::after {
+            content: '▸';
+            margin-left: 0.5rem;
+        }
+        .dropdown-item:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .body-back {
+            background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+            background-repeat: repeat;
+        }
+    </style>
 </head>
-<body>
-<div id="main-cont">
-    <div id="container">
-        <div id="header">
-            <div id="logo"><img src="http://ejudge.strategy48.ru/ejudge/logo3.png" alt="logo"/></div>
-            <h1>Ошибка 404: Упс! Кажется, запрошенной страницы не существует...</h1>
-        </div>
 
-        <div id="menuContestSelector"></div>
+<body class="body-back">
 
-        <h4>Кажется, запрошенной страницы не существует! Если вы уверены, что правильно ввели адрес и здесь действительно что-то должно быть, напишите нам письмо по адресу <a href="mailto:perveev_m@mail.ru?subject=Ошибка 404">perveev_m@mail.ru</a></h4>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
 
-        <div id="footerCopyright"></div>
+<div class="container" style="background-color: white;">
+    <div id="menuContestSelector"></div>
+
+    <div class="col-md-12 text-center">
+        <h3>Ошибка 404: Упс! Кажется, запрошенной страницы не существует...</h3>
     </div>
+
+    <div align="justify">
+        <p>Кажется, запрошенной страницы не существует!</p>
+        <p>Если вы уверены, что правильно ввели адрес и здесь действительно что-то должно быть, напишите нам письмо по адресу <a href="mailto:perveev_m@mail.ru?subject=Ошибка 404">perveev_m@mail.ru</a></p>
+    </div>
+
+    <div id="footerCopyright"></div>
 </div>
 
+<script>
+    $('.dropdown-toggle').click(function(e) {
+        if ($(document).width() > 768) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            if (url !== '#') {
+                window.location.href = url;
+            }
+        }
+    });
+</script>
 </body>
 </html>
 

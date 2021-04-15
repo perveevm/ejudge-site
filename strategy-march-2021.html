@@ -1,15 +1,13 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="./ejudge/unpriv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/unpriv3.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/priv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/ejudge3_ss.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Информационно-экономическая смена. Март 2021. Отбор</title>
 
-    <script type="text/javascript" charset="UTF-8" src="./ejudge/priv.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
 
     <script src="./ejudge/jquery.min.js"></script>
     <script>
@@ -18,42 +16,84 @@
             $("#footerCopyright").load("footer.html");
         });
     </script>
+
+    <style>
+        .dropdown-menu .dropdown-menu {
+            top: auto;
+            left: 100%;
+            transform: translateY(-2rem);
+        }
+        .dropdown-item + .dropdown-menu {
+            display: none;
+        }
+        .dropdown-item.submenu::after {
+            content: '▸';
+            margin-left: 0.5rem;
+        }
+        .dropdown-item:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .body-back {
+            background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+            background-repeat: repeat;
+        }
+    </style>
 </head>
-<body>
-<div id="main-cont">
-    <div id="container">
-        <div id="header">
-            <div id="logo"><img src="./ejudge/logo3.png" alt="logo"/></div>
-            <h1>Информационно-экономическая смена. Март 2021. Отбор</h1>
-        </div>
 
-        <div id="menuContestSelector"></div>
+<body class="body-back">
 
-        <h3>Уважаемые участники отбора!</h3>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src=""></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
+
+<div class="container" style="background-color: white;">
+    <div id="menuContestSelector"></div>
+
+    <div class="col-md-12 text-center">
+        <h3>Информационно-экономическая смена. Март 2021. Отбор</h3>
+    </div>
+
+    <div align="justify">
+        <p><b>Уважаемые участники отбора!</b></p>
         <p>Отбор на Информационно-экономическую смену пройдет 14 марта 2021 года с 10:00 до 22:00 по Московскому времени.</p>
         <p>Отбор состоит из восьми задач разного уровня сложности. Задачи упорядочены по сложности, однако рекомендуем Вам прочитать все задачи. По каждой задаче можно набрать как полный, так и частичный балл. Описание критериев для получения тех или иных баллов содержится в тексте условий задач.</p>
         <p>Войти в отбор Вы можете по ссылке ниже при полощи логина и пароля, высланного Вам на электронную почту, указанную при регистрации.</p>
         <p>В случае возникновения вопросов, связанных с условиями задач, вы можете задать их в системе.</p>
         <p>В случае обнаружения плагиата решений жюри оставляет за собой право дисквалифицировать данные решения.</p>
         <p><i>Желаем Вам удачи!</i></p>
-
-        <table class="table-gray">
-            <tr>
-                <th>Дата</th>
-                <th>Название турнира</th>
-                <th>Вход</th>
-                <th>Результаты</th>
-            </tr>
-
-            <tr>
-                <td>14.03.2021</td>
-                <td>Информационно-экономическая смена. Март 2021. Отбор</td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=128">Вход</a></td>
-                <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/strategy-march-2021-vahitebom">Результаты</a></td>
-            </tr>
-        </table>
-        <div id="footerCopyright"></div>
     </div>
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>Дата</th>
+            <th>Название турнира</th>
+            <th>Вход</th>
+            <th>Результаты</th>
+        </tr>
+
+        <tr>
+            <td>14.03.2021</td>
+            <td>Информационно-экономическая смена. Март 2021. Отбор</td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=128">Вход</a></td>
+            <td><a href="http://ejudge.strategy48.ru/ejudge-new-standings/strategy-march-2021-vahitebom">Результаты</a></td>
+        </tr>
+    </table>
+
+    <div id="footerCopyright"></div>
 </div>
+
+<script>
+    $('.dropdown-toggle').click(function(e) {
+        if ($(document).width() > 768) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            if (url !== '#') {
+                window.location.href = url;
+            }
+        }
+    });
+</script>
 </body>
 </html>

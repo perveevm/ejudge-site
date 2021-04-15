@@ -1,15 +1,13 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="./ejudge/unpriv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/unpriv3.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/priv.css" type="text/css"/>
-    <link rel="stylesheet" href="./ejudge/ejudge3_ss.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Школьный этап ВсОШ по информатике 2019</title>
 
-    <script type="text/javascript" charset="UTF-8" src="./ejudge/priv.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
 
     <script src="./ejudge/jquery.min.js"></script>
     <script>
@@ -18,57 +16,96 @@
             $("#footerCopyright").load("footer.html");
         });
     </script>
+
+    <style>
+        .dropdown-menu .dropdown-menu {
+            top: auto;
+            left: 100%;
+            transform: translateY(-2rem);
+        }
+        .dropdown-item + .dropdown-menu {
+            display: none;
+        }
+        .dropdown-item.submenu::after {
+            content: '▸';
+            margin-left: 0.5rem;
+        }
+        .dropdown-item:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .body-back {
+            background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+            background-repeat: repeat;
+        }
+    </style>
 </head>
-<body>
-<div id="main-cont">
-    <div id="container">
-        <div id="header">
-            <div id="logo"><img src="./ejudge/logo3.png" alt="logo"/></div>
-            <h1>Школьный этап ВсОШ по информатике 2019</h1>
-        </div>
 
-        <div id="menuContestSelector"></div>
+<body class="body-back">
 
-        <table class="table-gray">
-            <tr>
-                <th>N</th>
-                <th>Название турнира</th>
-                <th>Дорешка</th>
-                <th>Регистрация на дорешку</th>
-            </tr>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src=""></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
 
-            <tr>
-                <td>1</td>
-                <td><a href="cgi-bin/new-client?contest_id=9">Школьный этап ВсОШ по информатике 2019. Пробный тур</a></td>
-                <td>–</td>
-                <td>–</td>
-            </tr>
+<div class="container" style="background-color: white;">
+    <div id="menuContestSelector"></div>
 
-            <tr>
-                <td>2</td>
-                <td><a href="cgi-bin/new-client?contest_id=8">Школьный этап ВсОШ по информатике 2019 (5-6 классы)</a></td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=30">Дорешка</a></td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-register?action=212&contest_id=30">Регистрация</a></td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td><a href="cgi-bin/new-client?contest_id=7">Школьный этап ВсОШ по информатике 2019 (7-8 классы)</a></td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=31">Дорешка</a></td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-register?action=212&contest_id=31">Регистрация</a></td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td><a href="cgi-bin/new-client?contest_id=6">Школьный этап ВсОШ по информатике 2019 (9-11 классы)</a></td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=32">Дорешка</a></td>
-                <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-register?action=212&contest_id=32">Регистрация</a></td>
-            </tr>
-
-        </table>
-        <div id="footerCopyright"></div>
+    <div class="col-md-12 text-center">
+        <h3>Школьный этап ВсОШ по информатике 2019</h3>
     </div>
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th>N</th>
+            <th>Название турнира</th>
+            <th>Дорешка</th>
+            <th>Регистрация на дорешку</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td><a href="cgi-bin/new-client?contest_id=9">Школьный этап ВсОШ по информатике 2019. Пробный тур</a></td>
+            <td>–</td>
+            <td>–</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td><a href="cgi-bin/new-client?contest_id=8">Школьный этап ВсОШ по информатике 2019 (5-6 классы)</a></td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=30">Дорешка</a></td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-register?action=212&contest_id=30">Регистрация</a></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td><a href="cgi-bin/new-client?contest_id=7">Школьный этап ВсОШ по информатике 2019 (7-8 классы)</a></td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=31">Дорешка</a></td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-register?action=212&contest_id=31">Регистрация</a></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td><a href="cgi-bin/new-client?contest_id=6">Школьный этап ВсОШ по информатике 2019 (9-11 классы)</a></td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-client?contest_id=32">Дорешка</a></td>
+            <td><a href="http://ejudge.strategy48.ru/cgi-bin/new-register?action=212&contest_id=32">Регистрация</a></td>
+        </tr>
+
+    </table>
+
+    <div id="footerCopyright"></div>
 </div>
+
+<script>
+    $('.dropdown-toggle').click(function(e) {
+        if ($(document).width() > 768) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            if (url !== '#') {
+                window.location.href = url;
+            }
+        }
+    });
+</script>
 </body>
 </html>
-
