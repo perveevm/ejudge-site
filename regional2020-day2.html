@@ -1,15 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html><head>
+    <title>Региональный этап ВсОШ по информатике 2020. Второй тур</title>
+
     <meta http-equiv="Content-type" content='text/html; charset=utf-8' />
     <link rel="stylesheet" href="./ejudge/unpriv.css" type="text/css"/>
     <link rel="stylesheet" href="./ejudge/unpriv3.css" type="text/css"/>
     <link rel="stylesheet" href='./ejudge/priv.css' type="text/css" />
     <link rel="stylesheet" href='./ejudge/ejudge3_ss.css' type="text/css" />
-
-    <script type="text/javascript" charset="UTF-8" src="/ejudge/priv.js"></script>
-
-    <title>Региональный этап ВсОШ по информатике 2020. Второй тур</title>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
 
     <script src="./ejudge/jquery.min.js"></script>
     <script>
@@ -18,16 +21,43 @@
             $("#footerCopyright").load("footer.html");
         });
     </script>
+
+    <style>
+        .dropdown-menu .dropdown-menu {
+            top: auto;
+            left: 100%;
+            transform: translateY(-2rem);
+        }
+        .dropdown-item + .dropdown-menu {
+            display: none;
+        }
+        .dropdown-item.submenu::after {
+            content: '▸';
+            margin-left: 0.5rem;
+        }
+        .dropdown-item:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .body-back {
+            background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+            background-repeat: repeat;
+        }
+    </style>
 </head>
-<body>
-<div id="main-cont"><div id="container">
 
-    <div id="header">
-        <div id="logo"><img src='./ejudge/logo3.png' alt="logo"/></div>
-        <h1>Региональный этап ВсОШ по информатике 2020. Второй тур</h1>
-    </div>
+<body class="body-back">
 
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
+
+<div class="container" style="background-color: white;">
     <div id="menuContestSelector"></div>
+
+    <div class="col-md-12 text-center">
+        <h3>Региональный этап ВсОШ по информатике 2020. Второй тур</h3>
+    </div>
 
     <table width="100%" class="standings">
         <tr >
@@ -1365,9 +1395,20 @@
 
         </tr>
     </table>
-    <div id="footerCopyright"></div>
 
+    <div id="footerCopyright"></div>
 </div>
-</div>
+
+<script>
+    $('.dropdown-toggle').click(function(e) {
+        if ($(document).width() > 768) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            if (url !== '#') {
+                window.location.href = url;
+            }
+        }
+    });
+</script>
 </body>
 </html>
