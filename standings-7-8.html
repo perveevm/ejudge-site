@@ -1,17 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html><head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-<meta http-equiv="Content-type" content='text/html; charset=utf-8' />
+  <title>Муниципальный этап ВсОШ по информатике 2019 (7-8 классы)</title>
+
+  <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
   <link rel="stylesheet" href="./ejudge/unpriv.css" type="text/css"/>
   <link rel="stylesheet" href="./ejudge/unpriv3.css" type="text/css"/>
   <link rel="stylesheet" href='./ejudge/priv.css' type="text/css" />
   <link rel="stylesheet" href='./ejudge/ejudge3_ss.css' type="text/css" />
-
-  <script type="text/javascript" charset="UTF-8" src="/ejudge/priv.js"></script>
-
-  <title>Муниципальный этап ВсОШ по информатике 2019 (7-8 классы)</title>
 
   <script src="./ejudge/jquery.min.js"></script>
   <script>
@@ -20,2464 +22,2505 @@
       $("#footerCopyright").load("footer.html");
     });
   </script>
-</head>
-<body>
-<div id="main-cont"><div id="container">
-  <div id="header">
-    <div id="logo"><img src='./ejudge/logo3.png' alt="logo"/></div>
-    <h1>Муниципальный этап ВсОШ по информатике 2019 (7-8 классы)</h1>
-  </div>
 
+  <style>
+    .dropdown-menu .dropdown-menu {
+      top: auto;
+      left: 100%;
+      transform: translateY(-2rem);
+    }
+    .dropdown-item + .dropdown-menu {
+      display: none;
+    }
+    .dropdown-item.submenu::after {
+      content: '▸';
+      margin-left: 0.5rem;
+    }
+    .dropdown-item:hover + .dropdown-menu,
+    .dropdown-menu:hover {
+      display: block;
+    }
+    .body-back {
+      background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('bg.png');
+      background-repeat: repeat;
+    }
+  </style>
+</head>
+
+<body class="body-back">
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src=""></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.js"></script>
+
+<div class="container" style="background-color: white;">
   <div id="menuContestSelector"></div>
 
-<table width="100%" class="standings"><div class="table-responsive fixed-table-body">
-  <tr >
-    <th  class="st_place">Place</th>
-    <th  class="st_team">User</th>
+  <div class="col-md-12 text-center">
+    <h3>Муниципальный этап ВсОШ по информатике 2019 (7-8 классы)</h3>
+  </div>
 
+  <div class="table-responsive fixed-table-body">
+    <table width="100%" class="standings">
+      <tr >
+        <th  class="st_place">Place</th>
+        <th  class="st_team">User</th>
 
 
 
-    <th  class="st_prob">A</th>
 
-    <th  class="st_prob">B</th>
+        <th  class="st_prob">A</th>
 
-    <th  class="st_prob">C</th>
+        <th  class="st_prob">B</th>
 
-    <th  class="st_prob">D</th>
+        <th  class="st_prob">C</th>
 
-    <th  class="st_prob">E</th>
+        <th  class="st_prob">D</th>
 
-    <th  class="st_total">Solved</th>
-    <th  class="st_score">Score</th>
+        <th  class="st_prob">E</th>
 
+        <th  class="st_total">Solved</th>
+        <th  class="st_score">Score</th>
 
-  </tr>
 
+      </tr>
 
-  <tr >
-    <td  class="st_place">1-3</td>
-    <td  class="st_team">Ермолов Егор Владимирович 8 город Липецк 37</td>
 
+      <tr >
+        <td  class="st_place">1-3</td>
+        <td  class="st_team">Ермолов Егор Владимирович 8 город Липецк 37</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:10:53</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:04</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:23:47</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:06</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">1:12:34</div></td>
-    <td  class="st_total">5</td>
-    <td  class="st_score">500</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:10:53</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:04</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:23:47</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:06</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">1:12:34</div></td>
+        <td  class="st_total">5</td>
+        <td  class="st_score">500</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">1-3</td>
-    <td  class="st_team">Тулинов Тимофей Антонович 8 город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">1-3</td>
+        <td  class="st_team">Тулинов Тимофей Антонович 8 город Липецк 44</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:08:17</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:01:24</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:19:28</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:25:56</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:08:45</div></td>
-    <td  class="st_total">5</td>
-    <td  class="st_score">500</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:08:17</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:01:24</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:19:28</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:25:56</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:08:45</div></td>
+        <td  class="st_total">5</td>
+        <td  class="st_score">500</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">1-3</td>
-    <td  class="st_team">Хромов Адам Евгеньевич 8 город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">1-3</td>
+        <td  class="st_team">Хромов Адам Евгеньевич 8 город Липецк 44</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:32:33</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:25:13</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:28:31</div></td>
-    <td  class="st_prob"><b>100</b> (5)<div class="st_time">1:02:00</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:26:14</div></td>
-    <td  class="st_total">5</td>
-    <td  class="st_score">500</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:32:33</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:25:13</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:28:31</div></td>
+        <td  class="st_prob"><b>100</b> (5)<div class="st_time">1:02:00</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:26:14</div></td>
+        <td  class="st_total">5</td>
+        <td  class="st_score">500</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">4</td>
-    <td  class="st_team">Титов Федор Александрович 8 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">4</td>
+        <td  class="st_team">Титов Федор Александрович 8 город Липецк 12</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:58:24</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:11:26</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:18</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:23:11</div></td>
-    <td  class="st_prob">70 (2)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">470</td>
 
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:58:24</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:11:26</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:18</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:23:11</div></td>
+        <td  class="st_prob">70 (2)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">470</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">5</td>
-    <td  class="st_team">Галкина Екатерина Александровна 8 город Липецк 61</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">5</td>
+        <td  class="st_team">Галкина Екатерина Александровна 8 город Липецк 61</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:52:49</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:08:44</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:34:01</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:40:51</div></td>
-    <td  class="st_prob">30 (7)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">430</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:52:49</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:08:44</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:34:01</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:40:51</div></td>
+        <td  class="st_prob">30 (7)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">430</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">6</td>
-    <td  class="st_team">Кусакина Диана Сергеевна 8 город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">6</td>
+        <td  class="st_team">Кусакина Диана Сергеевна 8 город Липецк 44</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:06:43</div></td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:19:34</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:23:22</div></td>
-    <td  class="st_prob"><b>100</b> (10)<div class="st_time">1:56:58</div></td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">425</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:06:43</div></td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:19:34</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:23:22</div></td>
+        <td  class="st_prob"><b>100</b> (10)<div class="st_time">1:56:58</div></td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">425</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">7-9</td>
-    <td  class="st_team">Данилов Артем Кароевич 7 город Липецк 47</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">7-9</td>
+        <td  class="st_team">Данилов Артем Кароевич 7 город Липецк 47</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:11:13</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:20:59</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:37:33</div></td>
-    <td  class="st_prob">30 (1)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">405</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:11:13</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:20:59</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:37:33</div></td>
+        <td  class="st_prob">30 (1)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">405</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">7-9</td>
-    <td  class="st_team">Ржевин Андрей Евгеньевич 7 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">7-9</td>
+        <td  class="st_team">Ржевин Андрей Евгеньевич 7 город Липецк 12</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:24:07</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:10:42</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:34:02</div></td>
-    <td  class="st_prob">30 (2)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">405</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:24:07</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:10:42</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:34:02</div></td>
+        <td  class="st_prob">30 (2)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">405</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">7-9</td>
-    <td  class="st_team">Паничкин Владислав Ильич 8 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">7-9</td>
+        <td  class="st_team">Паничкин Владислав Ильич 8 город Липецк 12</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:01</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:14</div></td>
-    <td  class="st_prob"><b>100</b> (7)<div class="st_time">2:32:54</div></td>
-    <td  class="st_prob">30 (4)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">405</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:01</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:14</div></td>
+        <td  class="st_prob"><b>100</b> (7)<div class="st_time">2:32:54</div></td>
+        <td  class="st_prob">30 (4)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">405</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">10-14</td>
-    <td  class="st_team">Родионов Артём Юрьевич 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">10-14</td>
+        <td  class="st_team">Родионов Артём Юрьевич 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:33:46</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:29:34</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:25:47</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:08:32</div></td>
-    <td  class="st_prob">0 (4)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">400</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:33:46</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:29:34</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:25:47</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:08:32</div></td>
+        <td  class="st_prob">0 (4)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">400</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">10-14</td>
-    <td  class="st_team">Чуркин Никита Юрьевич 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">10-14</td>
+        <td  class="st_team">Чуркин Никита Юрьевич 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:53:44</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:29:34</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:39:46</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:09:10</div></td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">400</td>
 
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:53:44</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:29:34</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:39:46</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:09:10</div></td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">400</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">10-14</td>
-    <td  class="st_team">Санин Максим Александрович 8 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">10-14</td>
+        <td  class="st_team">Санин Максим Александрович 8 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:52:51</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:29:27</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:05</div></td>
-    <td  class="st_prob"><b>100</b> (5)<div class="st_time">2:14:50</div></td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">400</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:52:51</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:29:27</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:05</div></td>
+        <td  class="st_prob"><b>100</b> (5)<div class="st_time">2:14:50</div></td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">400</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">10-14</td>
-    <td  class="st_team">Винокуров Владислав Максимович 8 город Липецк 20</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">10-14</td>
+        <td  class="st_team">Винокуров Владислав Максимович 8 город Липецк 20</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:14:17</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:29:51</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:42:29</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:02:19</div></td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">400</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:14:17</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:29:51</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:42:29</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:02:19</div></td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">400</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">10-14</td>
-    <td  class="st_team">Дударчук Матвей Викторович 8 Данковский МБОУ СОШ №1</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">10-14</td>
+        <td  class="st_team">Дударчук Матвей Викторович 8 Данковский МБОУ СОШ №1</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:37:24</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:55:38</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:35:45</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:42:12</div></td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">4</td>
-    <td  class="st_score">400</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:37:24</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:55:38</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:35:45</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:42:12</div></td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">4</td>
+        <td  class="st_score">400</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">15-18</td>
-    <td  class="st_team">Минасян Никита Лерментович 7 городской округ город Елец МБОУ Лицей №5 г.Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">15-18</td>
+        <td  class="st_team">Минасян Никита Лерментович 7 городской округ город Елец МБОУ Лицей №5 г.Ельца</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:29:05</div></td>
-    <td  class="st_prob"><b>100</b> (5)<div class="st_time">1:22:56</div></td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:14:54</div></td>
-    <td  class="st_prob">30 (9)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">380</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:29:05</div></td>
+        <td  class="st_prob"><b>100</b> (5)<div class="st_time">1:22:56</div></td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:14:54</div></td>
+        <td  class="st_prob">30 (9)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">380</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">15-18</td>
-    <td  class="st_team">Антонова Ирина Валерьевна 7 город Липецк 50</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">15-18</td>
+        <td  class="st_team">Антонова Ирина Валерьевна 7 город Липецк 50</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:40</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:52:50</div></td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">1:54:46</div></td>
-    <td  class="st_prob">30 (17)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">380</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:40</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:52:50</div></td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">1:54:46</div></td>
+        <td  class="st_prob">30 (17)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">380</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">15-18</td>
-    <td  class="st_team">Чупрына Матвей Михайлович 7 город Липецк 20</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">15-18</td>
+        <td  class="st_team">Чупрына Матвей Михайлович 7 город Липецк 20</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:11:03</div></td>
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">1:32:09</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">1:05:46</div></td>
-    <td  class="st_prob">30 (5)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">380</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:11:03</div></td>
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">1:32:09</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">1:05:46</div></td>
+        <td  class="st_prob">30 (5)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">380</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">15-18</td>
-    <td  class="st_team">Витюк Антон Юрьевич 8 город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">15-18</td>
+        <td  class="st_team">Витюк Антон Юрьевич 8 город Липецк 44</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:09:33</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:28:32</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:35:24</div></td>
-    <td  class="st_prob">30 (5)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">380</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:09:33</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:28:32</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:35:24</div></td>
+        <td  class="st_prob">30 (5)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">380</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">19-22</td>
-    <td  class="st_team">Цуканова Анастасия Владимировна 7 Лев-Толстовский МБОУ им.Л.Н.Толстого</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">19-22</td>
+        <td  class="st_team">Цуканова Анастасия Владимировна 7 Лев-Толстовский МБОУ им.Л.Н.Толстого</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:00:26</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (5)<div class="st_time">0:56:28</div></td>
-    <td  class="st_prob"><b>100</b> (5)<div class="st_time">2:30:26</div></td>
-    <td  class="st_prob">0 (5)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">375</td>
 
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:00:26</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (5)<div class="st_time">0:56:28</div></td>
+        <td  class="st_prob"><b>100</b> (5)<div class="st_time">2:30:26</div></td>
+        <td  class="st_prob">0 (5)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">375</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">19-22</td>
-    <td  class="st_team">Егорова Анастасия Тимофеевна 7 город Липецк 64</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">19-22</td>
+        <td  class="st_team">Егорова Анастасия Тимофеевна 7 город Липецк 64</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:51</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:17:58</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:40:12</div></td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">375</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:51</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:17:58</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:40:12</div></td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">375</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">19-22</td>
-    <td  class="st_team">Колмыков Ярослав Владимирович 8 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">19-22</td>
+        <td  class="st_team">Колмыков Ярослав Владимирович 8 город Липецк 12</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:02:21</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:09:49</div></td>
-    <td  class="st_prob"><b>100</b> (12)<div class="st_time">2:43:48</div></td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">375</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:02:21</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:09:49</div></td>
+        <td  class="st_prob"><b>100</b> (12)<div class="st_time">2:43:48</div></td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">375</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">19-22</td>
-    <td  class="st_team">Цыплякова Ксения Дмитриевна 8 город Липецк 19</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">19-22</td>
+        <td  class="st_team">Цыплякова Ксения Дмитриевна 8 город Липецк 19</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:19:35</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:53:51</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:03:42</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">375</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:19:35</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:53:51</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:03:42</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">375</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">23-24</td>
-    <td  class="st_team">Алексеев Илья Михайлович 7 город Липецк 64</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">23-24</td>
+        <td  class="st_team">Алексеев Илья Михайлович 7 город Липецк 64</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:26:33</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:40:12</div></td>
-    <td  class="st_prob">30 (2)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">355</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:26:33</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:40:12</div></td>
+        <td  class="st_prob">30 (2)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">355</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">23-24</td>
-    <td  class="st_team">Модолов Олег Игоревич 8 город Липецк 47</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">23-24</td>
+        <td  class="st_team">Модолов Олег Игоревич 8 город Липецк 47</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:56:47</div></td>
-    <td  class="st_prob"><b>100</b> (6)<div class="st_time">1:56:52</div></td>
-    <td  class="st_prob">30 (5)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">355</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:56:47</div></td>
+        <td  class="st_prob"><b>100</b> (6)<div class="st_time">1:56:52</div></td>
+        <td  class="st_prob">30 (5)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">355</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">25-27</td>
-    <td  class="st_team">Гревцов Андрей Сергеевич 7 городской округ город Елец МБОУ Лицей №5 г.Ельц</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">25-27</td>
+        <td  class="st_team">Гревцов Андрей Сергеевич 7 городской округ город Елец МБОУ Лицей №5 г.Ельц</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:57:38</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:20</div></td>
-    <td  class="st_prob"><b>100</b> (7)<div class="st_time">1:27:21</div></td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">350</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:57:38</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:20</div></td>
+        <td  class="st_prob"><b>100</b> (7)<div class="st_time">1:27:21</div></td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">350</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">25-27</td>
-    <td  class="st_team">Мамедов Рустам Тофинович 8 город Липецк 37</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">25-27</td>
+        <td  class="st_team">Мамедов Рустам Тофинович 8 город Липецк 37</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:02:05</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:08:35</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:33:04</div></td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">350</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:02:05</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:08:35</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:33:04</div></td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">350</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">25-27</td>
-    <td  class="st_team">Акулов Михаил Александрович 8 город Липецк 68</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">25-27</td>
+        <td  class="st_team">Акулов Михаил Александрович 8 город Липецк 68</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:50</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:48:38</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:58:47</div></td>
-    <td  class="st_prob">0 (4)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">350</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:50</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:48:38</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:58:47</div></td>
+        <td  class="st_prob">0 (4)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">350</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">28-30</td>
-    <td  class="st_team">Дементеев Дмитрий Николаевич 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">28-30</td>
+        <td  class="st_team">Дементеев Дмитрий Николаевич 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:12</div></td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:00:54</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:20:46</div></td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">325</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:12</div></td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:00:54</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:20:46</div></td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">325</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">28-30</td>
-    <td  class="st_team">Писеукова Любовь Алексеевна 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">28-30</td>
+        <td  class="st_team">Писеукова Любовь Алексеевна 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:42:21</div></td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:01:13</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:21:06</div></td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">325</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:42:21</div></td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:01:13</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:21:06</div></td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">325</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">28-30</td>
-    <td  class="st_team">Богуславский Андрей Владимирович 8 город Липецк 1</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">28-30</td>
+        <td  class="st_team">Богуславский Андрей Владимирович 8 город Липецк 1</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:02:19</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:43:54</div></td>
-    <td  class="st_prob">0 (16)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">325</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:02:19</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:43:54</div></td>
+        <td  class="st_prob">0 (16)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">325</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">31-32</td>
-    <td  class="st_team">Романов Андрей Алексеевич 7 город Липецк 33</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">31-32</td>
+        <td  class="st_team">Романов Андрей Алексеевич 7 город Липецк 33</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:16:45</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:13:43</div></td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">30 (4)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">305</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:16:45</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:13:43</div></td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">30 (4)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">305</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">31-32</td>
-    <td  class="st_team">Сараев Андрей Павлович 7 город Липецк 33</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">31-32</td>
+        <td  class="st_team">Сараев Андрей Павлович 7 город Липецк 33</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:20:37</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:25</div></td>
-    <td  class="st_prob">30 (22)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">305</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:20:37</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:25</div></td>
+        <td  class="st_prob">30 (22)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">305</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">33-38</td>
-    <td  class="st_team">Батанов Дмитрий Евгеньевич 8 Становлянский район МБОУ &quot;СШ с. Становое&quot;</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">33-38</td>
+        <td  class="st_team">Батанов Дмитрий Евгеньевич 8 Становлянский район МБОУ &quot;СШ с. Становое&quot;</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:57</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:55:00</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:16:26</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">300</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:28:57</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:55:00</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:16:26</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">300</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">33-38</td>
-    <td  class="st_team">Сидорков Никита Александрович 8 Становлянский район МБОУ &quot;СШ с. Становое&quot;</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">33-38</td>
+        <td  class="st_team">Сидорков Никита Александрович 8 Становлянский район МБОУ &quot;СШ с. Становое&quot;</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:29:48</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:55:00</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:13:54</div></td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">300</td>
 
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:29:48</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:55:00</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">1:13:54</div></td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">300</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">33-38</td>
-    <td  class="st_team">Доронина Диана Дмитриевна 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">33-38</td>
+        <td  class="st_team">Доронина Диана Дмитриевна 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:16:57</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:13:15</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:24:08</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">300</td>
 
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:16:57</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:13:15</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:24:08</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">300</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">33-38</td>
-    <td  class="st_team">Кострыкина Екатерина Геннадьевна 7 город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">33-38</td>
+        <td  class="st_team">Кострыкина Екатерина Геннадьевна 7 город Липецк 44</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:14:36</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:57</div></td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">1:55:32</div></td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">300</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:14:36</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:57</div></td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">1:55:32</div></td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">300</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">33-38</td>
-    <td  class="st_team">Шипилова Кристина Максимовна 7 город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">33-38</td>
+        <td  class="st_team">Шипилова Кристина Максимовна 7 город Липецк 44</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:11:59</div></td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:51:14</div></td>
-    <td  class="st_prob"><b>100</b> (21)<div class="st_time">2:08:47</div></td>
-    <td  class="st_prob">0 (11)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">300</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:11:59</div></td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:51:14</div></td>
+        <td  class="st_prob"><b>100</b> (21)<div class="st_time">2:08:47</div></td>
+        <td  class="st_prob">0 (11)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">300</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">33-38</td>
-    <td  class="st_team">Курдюкова Екатерина Романовна 8 город Липецк 64</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">33-38</td>
+        <td  class="st_team">Курдюкова Екатерина Романовна 8 город Липецк 64</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:12:24</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:19:17</div></td>
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:42:16</div></td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_total">3</td>
-    <td  class="st_score">300</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:12:24</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:19:17</div></td>
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">0:42:16</div></td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_total">3</td>
+        <td  class="st_score">300</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">39</td>
-    <td  class="st_team">Яриков Михаил Алексеевич 7 город Липецк 19</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">39</td>
+        <td  class="st_team">Яриков Михаил Алексеевич 7 город Липецк 19</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:16:04</div></td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_prob">70 (2)</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">295</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:16:04</div></td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_prob">70 (2)</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">295</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">40</td>
-    <td  class="st_team">Шамаев Семен 8 Аркадьевич город Липецк 44</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">40</td>
+        <td  class="st_team">Шамаев Семен 8 Аркадьевич город Липецк 44</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:38:53</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:10:39</div></td>
-    <td  class="st_prob">30 (7)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">280</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:38:53</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:10:39</div></td>
+        <td  class="st_prob">30 (7)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">280</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">41-45</td>
-    <td  class="st_team">Юрьев Тарас Ильич 7 Лебедянский МБОУ «Гимназия №1 имени Н.И.Борцова» г. Лебедянь</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">41-45</td>
+        <td  class="st_team">Юрьев Тарас Ильич 7 Лебедянский МБОУ «Гимназия №1 имени Н.И.Борцова» г. Лебедянь</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:20:24</div></td>
-    <td  class="st_prob">75 (3)</td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:20:38</div></td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">275</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:20:24</div></td>
+        <td  class="st_prob">75 (3)</td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:20:38</div></td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">275</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">41-45</td>
-    <td  class="st_team">Дорохин Степан Геннадьевич 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">41-45</td>
+        <td  class="st_team">Дорохин Степан Геннадьевич 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:22:14</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:01:20</div></td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">0 (4)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">275</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:22:14</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:01:20</div></td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">0 (4)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">275</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">41-45</td>
-    <td  class="st_team">Даллакян Андрей Арманович 8 город Липецк 41</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">41-45</td>
+        <td  class="st_team">Даллакян Андрей Арманович 8 город Липецк 41</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:08:10</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">0:22:00</div></td>
-    <td  class="st_prob">0 (20)</td>
-    <td  class="st_prob">0 (19)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">275</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:08:10</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">0:22:00</div></td>
+        <td  class="st_prob">0 (20)</td>
+        <td  class="st_prob">0 (19)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">275</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">41-45</td>
-    <td  class="st_team">Цитцер Никита Сергеевич 8 город Липецк 41</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">41-45</td>
+        <td  class="st_team">Цитцер Никита Сергеевич 8 город Липецк 41</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:09:40</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:33:07</div></td>
-    <td  class="st_prob">0 (18)</td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">275</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:09:40</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:33:07</div></td>
+        <td  class="st_prob">0 (18)</td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">275</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">41-45</td>
-    <td  class="st_team">Матюхин Дмитрий Владимирович 8 Долгоруковский Средняя общеобразовательная школа с.Войсковая Казинка</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">41-45</td>
+        <td  class="st_team">Матюхин Дмитрий Владимирович 8 Долгоруковский Средняя общеобразовательная школа с.Войсковая Казинка</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:45:58</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (6)<div class="st_time">1:41:17</div></td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">275</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:45:58</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (6)<div class="st_time">1:41:17</div></td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">275</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">46-48</td>
-    <td  class="st_team">Шилов Андрей Анатольевич 7 Краснинский район МБОУ СОШ с. Красное</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">46-48</td>
+        <td  class="st_team">Шилов Андрей Анатольевич 7 Краснинский район МБОУ СОШ с. Красное</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:02:40</div></td>
-    <td  class="st_prob">30 (6)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">255</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:02:40</div></td>
+        <td  class="st_prob">30 (6)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">255</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">46-48</td>
-    <td  class="st_team">Никитина Диана Владимировна 7 город Липецк 19</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">46-48</td>
+        <td  class="st_team">Никитина Диана Владимировна 7 город Липецк 19</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:22:04</div></td>
-    <td  class="st_prob">30 (10)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">255</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:22:04</div></td>
+        <td  class="st_prob">30 (10)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">255</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">46-48</td>
-    <td  class="st_team">Лисов Дмитрий Сергеевич 7 город Липецк 68</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">46-48</td>
+        <td  class="st_team">Лисов Дмитрий Сергеевич 7 город Липецк 68</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:40:15</div></td>
-    <td  class="st_prob">0 (9)</td>
-    <td  class="st_prob">30 (5)</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">255</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:40:15</div></td>
+        <td  class="st_prob">0 (9)</td>
+        <td  class="st_prob">30 (5)</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">255</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">49-54</td>
-    <td  class="st_team">Деев  Артем Андреевич 8 городской округ город Елец НОУ гимназия Альтернатива</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">49-54</td>
+        <td  class="st_team">Деев  Артем Андреевич 8 городской округ город Елец НОУ гимназия Альтернатива</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:33:35</div></td>
-    <td  class="st_prob"><b>100</b> (5)<div class="st_time">1:23:42</div></td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">250</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:33:35</div></td>
+        <td  class="st_prob"><b>100</b> (5)<div class="st_time">1:23:42</div></td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">250</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">49-54</td>
-    <td  class="st_team">Швецов Арсений Алексеевич 7 город Липецк 1</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">49-54</td>
+        <td  class="st_team">Швецов Арсений Алексеевич 7 город Липецк 1</td>
 
 
 
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">50 (5)</td>
-    <td  class="st_prob"><b>100</b> (7)<div class="st_time">0:55:26</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:09:46</div></td>
-    <td  class="st_prob">0 (10)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">250</td>
 
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">50 (5)</td>
+        <td  class="st_prob"><b>100</b> (7)<div class="st_time">0:55:26</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:09:46</div></td>
+        <td  class="st_prob">0 (10)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">250</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">49-54</td>
-    <td  class="st_team">Бутенко Егор Антонович 7 город Липецк 64</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">49-54</td>
+        <td  class="st_team">Бутенко Егор Антонович 7 город Липецк 64</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:41:45</div></td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:28:37</div></td>
-    <td  class="st_prob">0 (15)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">250</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:41:45</div></td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">0:28:37</div></td>
+        <td  class="st_prob">0 (15)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">250</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">49-54</td>
-    <td  class="st_team">Глазков Вадим Юрьевич 8 Елецкий муниципальный район МБОУ СОШ №2 с.Казаки</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">49-54</td>
+        <td  class="st_team">Глазков Вадим Юрьевич 8 Елецкий муниципальный район МБОУ СОШ №2 с.Казаки</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:46:14</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:53:56</div></td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_prob">0 (5)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">250</td>
 
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:46:14</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:53:56</div></td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_prob">0 (5)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">250</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">49-54</td>
-    <td  class="st_team">Малявин Андрей Геннадьевич 8 Елецкий муниципальный район МБОУ СОШ №2 с.Казаки</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">49-54</td>
+        <td  class="st_team">Малявин Андрей Геннадьевич 8 Елецкий муниципальный район МБОУ СОШ №2 с.Казаки</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:50</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:55:46</div></td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_prob">0 (5)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">250</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:50</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:55:46</div></td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_prob">0 (5)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">250</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">49-54</td>
-    <td  class="st_team">Клеников Павел Сергеевич 8 Елецкий муниципальный район МБОУ СОШ с. Каменское</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">49-54</td>
+        <td  class="st_team">Клеников Павел Сергеевич 8 Елецкий муниципальный район МБОУ СОШ с. Каменское</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:39:20</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:53:50</div></td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">250</td>
 
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:39:20</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:53:50</div></td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">250</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">55</td>
-    <td  class="st_team">Аверкиева Екатерина Александровна 8 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">55</td>
+        <td  class="st_team">Аверкиева Екатерина Александровна 8 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:01:41</div></td>
-    <td  class="st_prob">75 (2)</td>
-    <td  class="st_prob">60 (1)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">235</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:01:41</div></td>
+        <td  class="st_prob">75 (2)</td>
+        <td  class="st_prob">60 (1)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">235</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">56</td>
-    <td  class="st_team">Пушкарский Виталий Дмитриевич 7 город Липецк 19</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">56</td>
+        <td  class="st_team">Пушкарский Виталий Дмитриевич 7 город Липецк 19</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">0:51:49</div></td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">30 (6)</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">230</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">0:51:49</div></td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">30 (6)</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">230</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Зейналов Зейнал Яшар 7 Краснинский район МБОУ СОШ с. Красное</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Зейналов Зейнал Яшар 7 Краснинский район МБОУ СОШ с. Красное</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:06:22</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:06:22</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Боровков Андрей Андреевич 7 Краснинский район МБОУ СОШ с. Красное</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Боровков Андрей Андреевич 7 Краснинский район МБОУ СОШ с. Красное</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:07:18</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (4)<div class="st_time">2:07:18</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Зарубин Максим Дмитриевич 7 Краснинский район МБОУ СОШ с. Красное</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Зарубин Максим Дмитриевич 7 Краснинский район МБОУ СОШ с. Красное</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:05:09</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (3)<div class="st_time">2:05:09</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Бозванов Иван Олегович 8 Лебедянский МБОУ «Гимназия №1 имени Н.И.Борцова» г. Лебедянь</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Бозванов Иван Олегович 8 Лебедянский МБОУ «Гимназия №1 имени Н.И.Борцова» г. Лебедянь</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">75 (2)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:56</div></td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">75 (2)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:38:56</div></td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Балалаев Арсений Алексеевич 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Балалаев Арсений Алексеевич 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:46:53</div></td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:10</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:46:53</div></td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:10</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Бухонов Максим Владимирович 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Бухонов Максим Владимирович 8 Хлевенский муниципальный район МБОУ «СОШ села Конь-Колодезь»</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:44:24</div></td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:59</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:44:24</div></td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:30:59</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Павловский Никита Андреевич 7 город Липецк 19</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Павловский Никита Андреевич 7 город Липецк 19</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:23</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:23</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Лаврентьев Михаил 19 Владимирович город Липецк</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Лаврентьев Михаил 19 Владимирович город Липецк</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (2)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:53</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (2)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:18:53</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Лысиков Дмитрий Васильевич 8 Данковский МБОУ лицей №4</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Лысиков Дмитрий Васильевич 8 Данковский МБОУ лицей №4</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:05:38</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:05:38</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">57-66</td>
-    <td  class="st_team">Данковский Короткова Ульяна Андреевна 8 МБОУ лицей №6</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">57-66</td>
+        <td  class="st_team">Данковский Короткова Ульяна Андреевна 8 МБОУ лицей №6</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:06:01</div></td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">225</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">2:06:01</div></td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">225</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">67</td>
-    <td  class="st_team">Базаев Владислав Сергеевич 8 Данковский МБОУ СОШ №1</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">67</td>
+        <td  class="st_team">Базаев Владислав Сергеевич 8 Данковский МБОУ СОШ №1</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:46:34</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">60 (3)</td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">210</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:46:34</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">60 (3)</td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">210</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">68</td>
-    <td  class="st_team">Куреев Кирилл Андреевич 7 Елецкий муниципальный район МБОУ СОШ №2 с.Казаки</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">68</td>
+        <td  class="st_team">Куреев Кирилл Андреевич 7 Елецкий муниципальный район МБОУ СОШ №2 с.Казаки</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:46:16</div></td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:16:56</div></td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">2</td>
-    <td  class="st_score">200</td>
 
+        <td  class="st_prob"><b>100</b> (2)<div class="st_time">2:46:16</div></td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:16:56</div></td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">2</td>
+        <td  class="st_score">200</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">69</td>
-    <td  class="st_team">Приладышев Юрий Владимирович 8 Грязинский муниципальный район МБОУ СОШ №5 г.Грязи</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">69</td>
+        <td  class="st_team">Приладышев Юрий Владимирович 8 Грязинский муниципальный район МБОУ СОШ №5 г.Грязи</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">60 (5)</td>
-    <td  class="st_prob">30 (3)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">190</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">60 (5)</td>
+        <td  class="st_prob">30 (3)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">190</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">70</td>
-    <td  class="st_team">Измалковский район 7 Канцеров Владислав Сергеевич МБОУ СОШ с.Афанасьево</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">70</td>
+        <td  class="st_team">Измалковский район 7 Канцеров Владислав Сергеевич МБОУ СОШ с.Афанасьево</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob">60 (4)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">185</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob">60 (4)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">185</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">71</td>
-    <td  class="st_team">Гудович Александр Дмитриевич 8 город Липецк 37</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">71</td>
+        <td  class="st_team">Гудович Александр Дмитриевич 8 город Липецк 37</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:43:25</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">30 (9)</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">180</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:43:25</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">30 (9)</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">180</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">72-75</td>
-    <td  class="st_team">Измалковский район 7 Дрокина Варвара Андреевна МБОУСОШ №1 с.Измалково</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">72-75</td>
+        <td  class="st_team">Измалковский район 7 Дрокина Варвара Андреевна МБОУСОШ №1 с.Измалково</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:12:42</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">175</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:12:42</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">175</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">72-75</td>
-    <td  class="st_team">Измалковский район 7 Ширинкина Алина Алексеевна МБОУСОШ №1 с.Измалково</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">72-75</td>
+        <td  class="st_team">Измалковский район 7 Ширинкина Алина Алексеевна МБОУСОШ №1 с.Измалково</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:12:39</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">175</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:12:39</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">175</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">72-75</td>
-    <td  class="st_team">Чернавцева Дарья Романовна 7 Чаплыгинский МБОУ СШ №2 г.Чаплыгина</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">72-75</td>
+        <td  class="st_team">Чернавцева Дарья Романовна 7 Чаплыгинский МБОУ СШ №2 г.Чаплыгина</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:31:15</div></td>
-    <td  class="st_prob">75 (2)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">175</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">1:31:15</div></td>
+        <td  class="st_prob">75 (2)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">175</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">72-75</td>
-    <td  class="st_team">Коротнева Полина Олеговна 8 городской округ город Елец МБОУ ОШ №15 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">72-75</td>
+        <td  class="st_team">Коротнева Полина Олеговна 8 городской округ город Елец МБОУ ОШ №15 г. Ельца</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:24:32</div></td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">175</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:24:32</div></td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">175</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">76</td>
-    <td  class="st_team">Косенков Иван Борисович 7 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">76</td>
+        <td  class="st_team">Косенков Иван Борисович 7 город Липецк 12</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">60 (9)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">160</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">60 (9)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">160</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">77-80</td>
-    <td  class="st_team">Прокофьев Кирилл Иванович 8 Задонский муниципальный район МБОУ СОШ с.Хмелинец</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">77-80</td>
+        <td  class="st_team">Прокофьев Кирилл Иванович 8 Задонский муниципальный район МБОУ СОШ с.Хмелинец</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:47:03</div></td>
-    <td  class="st_prob">50 (3)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">150</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:47:03</div></td>
+        <td  class="st_prob">50 (3)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">150</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">77-80</td>
-    <td  class="st_team">Гусев Лев Евгеньевич 8 Чаплыгинский МБОУ СШ п.Рощинский</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">77-80</td>
+        <td  class="st_team">Гусев Лев Евгеньевич 8 Чаплыгинский МБОУ СШ п.Рощинский</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:49:51</div></td>
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">150</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:49:51</div></td>
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">150</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">77-80</td>
-    <td  class="st_team">Наумов Владимир Денисович 7 город Липецк 68</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">77-80</td>
+        <td  class="st_team">Наумов Владимир Денисович 7 город Липецк 68</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:13:03</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">150</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:13:03</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">150</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">77-80</td>
-    <td  class="st_team">Мешков Егор Константинович 7 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">77-80</td>
+        <td  class="st_team">Мешков Егор Константинович 7 город Липецк 12</td>
 
 
 
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:46</div></td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">150</td>
 
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:15:46</div></td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">150</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">81-82</td>
-    <td  class="st_team">Кислов Михаил Андреевич 7 город Липецк 12</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">81-82</td>
+        <td  class="st_team">Кислов Михаил Андреевич 7 город Липецк 12</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">125</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">125</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">81-82</td>
-    <td  class="st_team">Потафеев Алексей Александрович 8 Данковский МБОУ лицей №4</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">81-82</td>
+        <td  class="st_team">Потафеев Алексей Александрович 8 Данковский МБОУ лицей №4</td>
 
 
 
-    <td  class="st_prob">75 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">125</td>
 
+        <td  class="st_prob">75 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">125</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Колчев Вадиим Алексеевич 8 Задонский муниципальный район МБОУ СОШ №2 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Колчев Вадиим Алексеевич 8 Задонский муниципальный район МБОУ СОШ №2 г.Задонска</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Добранчев  Николай М Олегович Задонский муниципальный район</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Добранчев  Николай М Олегович Задонский муниципальный район</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Маликова Вероника Анатольевна 8 Чаплыгинский МБОУ СШ№1 г.Чаплыгина</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Маликова Вероника Анатольевна 8 Чаплыгинский МБОУ СШ№1 г.Чаплыгина</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Анохина Екатерина Алексеевна 8 Чаплыгинский МБОУ СШ п.Рощинский</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Анохина Екатерина Алексеевна 8 Чаплыгинский МБОУ СШ п.Рощинский</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Куреев Дмитрий Алексеевич 7 городской округ город Елец МБОУ СШ № 10 с углубленым изучением отдельных предметов</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Куреев Дмитрий Алексеевич 7 городской округ город Елец МБОУ СШ № 10 с углубленым изучением отдельных предметов</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Селяков Никита Андреевич 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Селяков Никита Андреевич 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Плотников Роман Михайлович 7 Грязинский муниципальный район МБОУ СОШ №9  г.Грязи</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Плотников Роман Михайлович 7 Грязинский муниципальный район МБОУ СОШ №9  г.Грязи</td>
 
 
 
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:26:00</div></td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">1</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_prob"><b>100</b> (1)<div class="st_time">0:26:00</div></td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">1</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Иванушко Иван Олегович 8 Грязинский муниципальный район МБОУ СОШ №4 г.Грязи</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Иванушко Иван Олегович 8 Грязинский муниципальный район МБОУ СОШ №4 г.Грязи</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (4)</td>
-    <td  class="st_prob">0 (4)</td>
-    <td  class="st_prob">0 (2)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (4)</td>
+        <td  class="st_prob">0 (4)</td>
+        <td  class="st_prob">0 (2)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">83-91</td>
-    <td  class="st_team">Кулешова Снежанна Евгеньевна 8 Данковский МБОУ СОШ №1</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">83-91</td>
+        <td  class="st_team">Кулешова Снежанна Евгеньевна 8 Данковский МБОУ СОШ №1</td>
 
 
 
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">50 (3)</td>
-    <td  class="st_prob">0 (8)</td>
-    <td  class="st_prob">0 (7)</td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">100</td>
 
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">50 (3)</td>
+        <td  class="st_prob">0 (8)</td>
+        <td  class="st_prob">0 (7)</td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">100</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">92-93</td>
-    <td  class="st_team">Фролова Марина Ивановна 7 Задонский муниципальный район МБОУ СОШ с.Хмелинец</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">92-93</td>
+        <td  class="st_team">Фролова Марина Ивановна 7 Задонский муниципальный район МБОУ СОШ с.Хмелинец</td>
 
 
 
-    <td  class="st_prob">50 (3)</td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">75</td>
 
+        <td  class="st_prob">50 (3)</td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">75</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">92-93</td>
-    <td  class="st_team">Тупицына Ксения Андреевна 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">92-93</td>
+        <td  class="st_team">Тупицына Ксения Андреевна 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">75</td>
 
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">75</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Бухтоярова Эльвира Алексеевна 7 Хлевенский муниципальный район МБОУ СОШ с. Дмитряшевка</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Бухтоярова Эльвира Алексеевна 7 Хлевенский муниципальный район МБОУ СОШ с. Дмитряшевка</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (6)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (6)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Пальчикова Ирина Николаевна 7 Хлевенский муниципальный район МБОУ СОШ с. Дмитряшевка</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Пальчикова Ирина Николаевна 7 Хлевенский муниципальный район МБОУ СОШ с. Дмитряшевка</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (18)</td>
-    <td  class="st_prob">0 (5)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (18)</td>
+        <td  class="st_prob">0 (5)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Пожидаева Олеся Алексеевна 7 Хлевенский муниципальный район МБОУ СОШ с. Дмитряшевка</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Пожидаева Олеся Алексеевна 7 Хлевенский муниципальный район МБОУ СОШ с. Дмитряшевка</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (4)</td>
-    <td  class="st_prob">0 (5)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (4)</td>
+        <td  class="st_prob">0 (5)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Русанова Полина Петровна 8 Чаплыгинский МБОУ СШ №1 с.Кривополянье</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Русанова Полина Петровна 8 Чаплыгинский МБОУ СШ №1 с.Кривополянье</td>
 
 
 
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">50 (11)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">50 (11)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Чаплыгина Алина Алексеевна 8 городской округ город Елец МБОУ ОШ №15 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Чаплыгина Алина Алексеевна 8 городской округ город Елец МБОУ ОШ №15 г. Ельца</td>
 
 
 
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Сухинин Никита Сергеевич 8 Данковский МБОУ лицей №6 г. Данкова</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Сухинин Никита Сергеевич 8 Данковский МБОУ лицей №6 г. Данкова</td>
 
 
 
-    <td  class="st_prob">50 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">50 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">94-100</td>
-    <td  class="st_team">Ермолаев Артемий Артурович 8 Данковский МБОУ СОШ №1</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">94-100</td>
+        <td  class="st_team">Ермолаев Артемий Артурович 8 Данковский МБОУ СОШ №1</td>
 
 
 
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">50 (2)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">50</td>
 
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">50 (2)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">50</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">101</td>
-    <td  class="st_team">Криворучко Александр Анатольевич 7 Грязинский муниципальный район МБОУ СОШ №9  г.Грязи</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">101</td>
+        <td  class="st_team">Криворучко Александр Анатольевич 7 Грязинский муниципальный район МБОУ СОШ №9  г.Грязи</td>
 
 
 
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">25 (1)</td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">25</td>
 
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">25 (1)</td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">25</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Дурнева Екатерина Геннадьевна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Дурнева Екатерина Геннадьевна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Трофимова  Светлана М Владимировна Задонский муниципальный район</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Трофимова  Светлана М Владимировна Задонский муниципальный район</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Лепихов Алексей Сергеевич 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Лепихов Алексей Сергеевич 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Попов Тимур Викторович 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Попов Тимур Викторович 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Дмитриева Ольга Романовна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Дмитриева Ольга Романовна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Петрушкина Софья Викторовна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Петрушкина Софья Викторовна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Селищева Юлия Александровна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Селищева Юлия Александровна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Дурнева Екатерина Дмитриевна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Дурнева Екатерина Дмитриевна 7 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Савчишкин Станислав Юрьевич 8 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Савчишкин Станислав Юрьевич 8 Задонский муниципальный район МБОУ СОШ №1 г.Задонска</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Бочков Владислав Николаевич 7 Краснинский район МБОУ СОШ с. Красное</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Бочков Владислав Николаевич 7 Краснинский район МБОУ СОШ с. Красное</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Аникин Дмитрий Андреевич 7 Лебедянский МБОУ СОШ с.Мокрое</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Аникин Дмитрий Андреевич 7 Лебедянский МБОУ СОШ с.Мокрое</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Коровин Сергей Александрович 8 Лев-Толстовский МБОУ им.Л.Н.Толстого</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Коровин Сергей Александрович 8 Лев-Толстовский МБОУ им.Л.Н.Толстого</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Никулин Назар Александрович 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Никулин Назар Александрович 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (3)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (3)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Санин Максим Владимирович 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Санин Максим Владимирович 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Щербатых Вера Витальевна 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Щербатых Вера Витальевна 7 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">0 (1)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">0 (1)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Афонин Даниил Сергеевич 8 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Афонин Даниил Сергеевич 8 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Мурин Дмитрий Алексеевич 8 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Мурин Дмитрий Алексеевич 8 Хлевенский муниципальный район МБОУ « Лицей села Хлевное»</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Чукин Максим Сергеевич 7 Чаплыгинский МБОУ ОШ с.Пиково</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Чукин Максим Сергеевич 7 Чаплыгинский МБОУ ОШ с.Пиково</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Куликов Максим Викторович 7 Чаплыгинский МБОУ ОШ с.Пиково</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Куликов Максим Викторович 7 Чаплыгинский МБОУ ОШ с.Пиково</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Бутасов Александр Александрович 8 Чаплыгинский МБОУ ОШ с.Пиково</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Бутасов Александр Александрович 8 Чаплыгинский МБОУ ОШ с.Пиково</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Галайда Максим Сергеевич 8 городской округ город Елец НОУ гимназия Альтернатива</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Галайда Максим Сергеевич 8 городской округ город Елец НОУ гимназия Альтернатива</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">0 (5)</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">0 (5)</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Пахомов Ростислав Русланович 7 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Пахомов Ростислав Русланович 7 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Неделин Георгий Михайлович 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Неделин Георгий Михайлович 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Балаев Владислав Михайлович 8 городской округ город Елец МБОУ ОШ №15 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Балаев Владислав Михайлович 8 городской округ город Елец МБОУ ОШ №15 г. Ельца</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Жиленко Игорь Евгеньевич 8 городской округ город Елец МБОУ СШ №8 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Жиленко Игорь Евгеньевич 8 городской округ город Елец МБОУ СШ №8 г. Ельца</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Воротынцев Егор Сергеевич 7 городской округ город Елец МБОУ СШ № 10 с углубленым изучением отдельных предметов</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Воротынцев Егор Сергеевич 7 городской округ город Елец МБОУ СШ № 10 с углубленым изучением отдельных предметов</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Клинов Ярослав Евгеньевич 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Клинов Ярослав Евгеньевич 8 городской округ город Елец МАОУ СШ №12 г. Ельца</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Терещук Александр Алексеевич 8 город Липецк 68</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Терещук Александр Алексеевич 8 город Липецк 68</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Невзорова Алёна Дмитриевна 8 Данковский МБОУ лицей №6 г. Данкова</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Невзорова Алёна Дмитриевна 8 Данковский МБОУ лицей №6 г. Данкова</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
-  <tr >
-    <td  class="st_place">102-131</td>
-    <td  class="st_team">Симонов Кирилл Александрович 8 Долгоруковский Средняя общеобразовательная школа Верхний Ломовец</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">102-131</td>
+        <td  class="st_team">Симонов Кирилл Александрович 8 Долгоруковский Средняя общеобразовательная школа Верхний Ломовец</td>
 
 
 
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_prob">&nbsp;</td>
-    <td  class="st_total">0</td>
-    <td  class="st_score">0</td>
 
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_prob">&nbsp;</td>
+        <td  class="st_total">0</td>
+        <td  class="st_score">0</td>
 
-  </tr>
 
+      </tr>
 
-  <tr >
-    <td  class="st_place">&nbsp;</td>
-    <td  class="st_team">Total:</td>
 
+      <tr >
+        <td  class="st_place">&nbsp;</td>
+        <td  class="st_team">Total:</td>
 
-    <td  class="st_prob">132</td>
 
-    <td  class="st_prob">143</td>
+        <td  class="st_prob">132</td>
 
-    <td  class="st_prob">228</td>
+        <td  class="st_prob">143</td>
 
-    <td  class="st_prob">350</td>
+        <td  class="st_prob">228</td>
 
-    <td  class="st_prob">267</td>
+        <td  class="st_prob">350</td>
 
-    <td  class="st_total">1120</td>
-    <td  class="st_pen">&nbsp;</td>
+        <td  class="st_prob">267</td>
 
-  </tr>
+        <td  class="st_total">1120</td>
+        <td  class="st_pen">&nbsp;</td>
 
-  <tr >
-    <td  class="st_place">&nbsp;</td>
-    <td  class="st_team">Success:</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">&nbsp;</td>
+        <td  class="st_team">Success:</td>
 
-    <td  class="st_prob">55</td>
 
-    <td  class="st_prob">23</td>
+        <td  class="st_prob">55</td>
 
-    <td  class="st_prob">65</td>
+        <td  class="st_prob">23</td>
 
-    <td  class="st_prob">32</td>
+        <td  class="st_prob">65</td>
 
-    <td  class="st_prob">4</td>
+        <td  class="st_prob">32</td>
 
-    <td  class="st_total">179</td>
-    <td  class="st_pen">&nbsp;</td>
+        <td  class="st_prob">4</td>
 
-  </tr>
+        <td  class="st_total">179</td>
+        <td  class="st_pen">&nbsp;</td>
 
-  <tr >
-    <td  class="st_place">&nbsp;</td>
-    <td  class="st_team">%:</td>
+      </tr>
 
+      <tr >
+        <td  class="st_place">&nbsp;</td>
+        <td  class="st_team">%:</td>
 
-    <td  class="st_prob">42%</td>
 
-    <td  class="st_prob">16%</td>
+        <td  class="st_prob">42%</td>
 
-    <td  class="st_prob">29%</td>
+        <td  class="st_prob">16%</td>
 
-    <td  class="st_prob">9%</td>
+        <td  class="st_prob">29%</td>
 
-    <td  class="st_prob">1%</td>
+        <td  class="st_prob">9%</td>
 
-    <td  class="st_total">16%</td>
-    <td  class="st_pen">&nbsp;</td>
+        <td  class="st_prob">1%</td>
 
-  </tr>
-</table></div>
+        <td  class="st_total">16%</td>
+        <td  class="st_pen">&nbsp;</td>
+
+      </tr>
+    </table>
+  </div>
+
   <div id="footerCopyright"></div>
+</div>
 
-</div>
-</div>
+<script>
+  $('.dropdown-toggle').click(function(e) {
+    if ($(document).width() > 768) {
+      e.preventDefault();
+      var url = $(this).attr('href');
+      if (url !== '#') {
+        window.location.href = url;
+      }
+    }
+  });
+</script>
 </body>
 </html>
-
