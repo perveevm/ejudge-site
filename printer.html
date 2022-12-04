@@ -68,9 +68,6 @@
         console.log("WOW!")
       },
       error: (xhr, status, error) => {
-        console.log(xhr);
-        console.log(status);
-        console.log(error);
         const alertContainer = document.getElementById('alerts');
         while (alertContainer.firstChild) {
           alertContainer.removeChild(alertContainer.lastChild);
