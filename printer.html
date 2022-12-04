@@ -12,19 +12,11 @@
   <link rel="stylesheet" href="../bootstrap.css" type="text/css"/>
 
   <script src="../ejudge/jquery.min.js"></script>
-  <script type="text/javascript">
+  <script>
     $(function () {
       $("#menuContestSelector").load("../menu.html");
       $("#footerCopyright").load("../footer.html");
     });
-
-    function handleSubmit(event) {
-      event.preventDefault();
-      console.log(event.target);
-    }
-
-    const form = document.getElementById('main-form');
-    form.addEventListener('submit', handleSubmit);
   </script>
 
   <style>
@@ -57,12 +49,65 @@
 <script src="../popper.min.js"></script>
 <script src="../bootstrap.js"></script>
 
+<script type="text/javascript">
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const data = new FormData(event.target);
+    const login = data.get('login');
+    const password = data.get('password');
+    const source = data.get('source');
+
+    $.ajax({
+      url: "http://ejudge.strategy48.ru:8095/api/print",
+      type: "POST",
+      data: JSON.stringify({"login": login, "password": password, "source": source}),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      success: () => {
+        console.log("WOW!")
+      },
+      error: (xhr, status, error) => {
+        // console.log(xhr);
+        // console.log(status);
+        // console.log(error);
+        const alertContainer = document.getElementById('alerts');
+        while (alertContainer.firstChild) {
+          alertContainer.removeChild(alertContainer.lastChild);
+        }
+        if (xhr.responseText === "") {
+          const alert = document.createElement("div");
+          alert.setAttribute("class", "alert alert-success");
+          alert.setAttribute("role", "alert");
+          alert.textContent = "Код отправлен на печать!";
+          alertContainer.appendChild(alert);
+        } else {
+          const alert = document.createElement("div");
+          alert.setAttribute("class", "alert alert-danger");
+          alert.setAttribute("role", "alert");
+          alert.textContent = "Произошла ошибка! " + xhr.responseText;
+          alertContainer.appendChild(alert);
+        }
+      }
+    })
+  }
+
+  function init() {
+    const form = document.getElementById('main-form');
+    form.addEventListener('submit', handleSubmit);
+  }
+
+  window.onload = init;
+</script>
+
 <div class="container" style="background-color: white;">
   <div id="menuContestSelector"></div>
 
   <div class="col-md-12 text-center">
     <h3>Печать кода</h3>
   </div>
+
+  <div id="alerts"></div>
 
   <div style="margin: 10px;">
     <form id="main-form">
