@@ -59,7 +59,7 @@
     const source = data.get('source');
 
     $.ajax({
-      url: "http://ejudge.strategy48.ru:8095/api/print",
+      url: "https://ejudge.strategy48.ru:8095/api/print",
       type: "POST",
       data: JSON.stringify({"login": login, "password": password, "source": source}),
       contentType: "application/json; charset=utf-8",
@@ -68,9 +68,9 @@
         console.log("WOW!")
       },
       error: (xhr, status, error) => {
-        // console.log(xhr);
-        // console.log(status);
-        // console.log(error);
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
         const alertContainer = document.getElementById('alerts');
         while (alertContainer.firstChild) {
           alertContainer.removeChild(alertContainer.lastChild);
